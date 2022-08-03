@@ -9,22 +9,23 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Fredoka", sans-serif;
   color: #444444;
 }
 
 a {
   text-decoration: none;
-  color: #0880e8;
+  color: #072843;
 }
 
 a:hover {
-  color: #2b99f8;
+  color: #072843;
   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
 }
 
 /*--------------------------------------------------------------
@@ -37,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #0880e8;
+  background: #CCE7FF;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -45,7 +46,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .back-to-top i {
   font-size: 28px;
-  color: #fff;
   line-height: 0;
 }
 .back-to-top:hover {
@@ -160,15 +160,16 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #072843;
+  background: #fff;
   transition: all 0.5s;
   z-index: 997;
   height: 70px;
   top: 60px;
 }
 #header.header-scrolled {
-  background: rgba(5, 87, 158, 0.9);
+  background: #fff;
   top: 0;
+  height: 80px;
 }
 #header .logo {
   font-size: 30px;
@@ -179,11 +180,8 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-#header .logo a {
-  color: #fff;
-}
 #header .logo img {
-  max-height: 40px;
+  max-height: 50px;
 }
 
 .header-inner-pages {
@@ -223,8 +221,8 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: space-between;
   padding: 0 3px;
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  color: #072843;
   white-space: nowrap;
   transition: 0.3s;
   position: relative;
@@ -251,7 +249,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #fff;
+  color: #072843;
 }
 .navbar .dropdown ul {
   display: block;
@@ -263,7 +261,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: #072843;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   border-radius: 8px;
@@ -280,6 +278,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar .dropdown ul a i {
   font-size: 12px;
+  
 }
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
   color: #0880e8;
@@ -545,7 +544,6 @@ section {
 }
 .section-title p {
   margin-bottom: 0;
-  font-style: italic;
 }
 
 /*--------------------------------------------------------------
@@ -587,7 +585,7 @@ section {
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
-  color: #777777;
+  color: #444;
 }
 
 /*--------------------------------------------------------------
@@ -649,16 +647,17 @@ section {
   border-radius: 5px;
   transition: 0.3s;
   line-height: 1;
-  color: #0880e8;
+  color: #054A85;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   margin-top: 6px;
-  border: 2px solid #0880e8;
+  border: 2px solid #054A85;
 }
 .about .content .btn-learn-more:hover {
-  background: #0880e8;
+  background: #054A85;
   color: #fff;
   text-decoration: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 @media (max-width: 992px) {
   .about {
@@ -741,7 +740,7 @@ section {
 }
 .why-us .content p {
   font-size: 15px;
-  color: #848484;
+  color: #444;
 }
 .why-us .video-box {
   background-size: cover;
@@ -777,7 +776,7 @@ section {
   cursor: pointer;
 }
 .why-us .accordion-list span {
-  color: #0880e8;
+  color: #054A85;
   font-weight: 600;
   font-size: 18px;
   padding-right: 10px;
@@ -943,7 +942,7 @@ section {
 .services .icon-box p {
   margin-left: 70px;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 0;
 }
 
@@ -980,6 +979,7 @@ section {
 }
 .cta .cta-btn:hover {
   background: #f6b024;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 @media (max-width: 1024px) {
   .cta {
@@ -1401,7 +1401,7 @@ section {
 }
 .contact .info i {
   font-size: 20px;
-  background: #0880e8;
+  background: #054A85;
   color: #fff;
   float: left;
   width: 44px;
@@ -1422,7 +1422,7 @@ section {
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 16px;
   color: #444444;
 }
 .contact .info .email, .contact .info .phone {
@@ -1486,15 +1486,16 @@ section {
 .contact .php-email-form button[type=submit] {
   border: 0;
   padding: 10px 32px;
-  color: #0880e8;
+  color: #054A85;
   transition: 0.4s;
   border-radius: 50px;
-  border: 2px solid #0880e8;
+  border: 2px solid #054A85;
   background: #fff;
 }
 .contact .php-email-form button[type=submit]:hover {
-  background: #0880e8;
+  background: #054A85;
   color: #fff;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 @-webkit-keyframes animate-loading {
   0% {
@@ -1965,7 +1966,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #05579e;
+  background: #054A85;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
@@ -2012,7 +2013,7 @@ section {
   background: #0880e8;
 }
 #footer .footer-top {
-  background: #065fad;
+  background: #054A85;
   padding: 60px 0 30px 0;
 }
 #footer .footer-top .footer-info {
@@ -2026,10 +2027,10 @@ section {
   font-weight: 700;
 }
 #footer .footer-top .footer-info p {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Fredoka", sans-serif;
   color: #fff;
 }
 #footer .footer-top .social-links a {
@@ -2122,4 +2123,8 @@ section {
 
 .pb-lg-6{
   padding-top: 1.5rem;
+}
+
+.color-primary{
+  color: #054A85;
 }
