@@ -2,1107 +2,443 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Gourbanbus | Urban Bus System</title>
-    <meta content="Urban Bus System" name="description">
-    <meta content="" name="keywords">
+  <title>Gourbanbus | Smart Urban Bus System</title>
+  <meta
+    content="Gourbanbus modernizes urban mobility with real-time bus tracking, arrival forecasts, passenger insights, and better transit operations."
+    name="description">
+  <meta content="urban mobility, bus tracker, GPS transit, public transport software, smart city transport"
+    name="keywords">
 
-    <!-- Favicons -->
-    <link href="assets/img/logo-favicon.svg" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Favicons -->
+  <link href="assets/img/logo-favicon.svg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <!-- Google Fonts -->
-    <!-- <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet"> -->
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fredoka:wght@300;400;600;700&family=Lexend+Deca:wght@300&family=Quicksand:wght@700&display=swap"
+    rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fredoka:wght@300;400;600;700&family=Lexend+Deca:wght@300&family=Quicksand:wght@700&display=swap"
-        rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
-
-    <!-- =======================================================
-  * Template Name: Anyar - v4.7.1
-  * Template URL: https://bootstrapmade.com/anyar-free-multipurpose-one-page-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-    <!-- ======= Top Bar ======= -->
-    <div id="topbar" class="fixed-top d-flex align-items-center ">
-        <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
-            <div class="contact-info d-flex align-items-center">
-                <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">info@gourbanbus.com</a>
-                <i class="bi bi-phone-fill phone-icon"></i> +60 12 873 1819
-            </div>
-            <div class="cta d-none d-md-block">
-                <a href="#about" class="scrollto">Get Started</a>
-            </div>
-        </div>
+  <!-- Top Bar -->
+  <div id="topbar" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope-fill" aria-hidden="true"></i><a href="mailto:info@gourbanbus.com">info@gourbanbus.com</a>
+        <i class="bi bi-phone-fill phone-icon" aria-hidden="true"></i>+60 12 873 1819
+      </div>
+      <div class="cta d-none d-md-block">
+        <a href="#contact" class="scrollto">Book a Demo</a>
+      </div>
     </div>
-
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top d-flex align-items-center ">
-        <div class="container d-flex align-items-center justify-content-between">
-
-            <!-- <h1 class="logo text-black"><a href="index.html">Gourbanbus</a></h1> -->
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <a href="index.html" class="logo"><img src="assets/img/logo-large.png" alt="" class="img-fluid"></a>
-
-            <nav id="navbar" class="navbar">
-                <ul>
-                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                    <li><a class="nav-link scrollto" href="#about">About</a></li>
-                    <li><a class="nav-link scrollto" href="#services">Solution</a></li>
-                    <!-- <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-                    <li><a class="nav-link scrollto" href="#team">Team</a></li>
-                    <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-                        <ul>
-                            <li><a href="#">Drop Down 1</a></li>
-                            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i
-                                        class="bi bi-chevron-right"></i></a>
-                                <ul>
-                                    <li><a href="#">Deep Drop Down 1</a></li>
-                                    <li><a href="#">Deep Drop Down 2</a></li>
-                                    <li><a href="#">Deep Drop Down 3</a></li>
-                                    <li><a href="#">Deep Drop Down 4</a></li>
-                                    <li><a href="#">Deep Drop Down 5</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Drop Down 2</a></li>
-                            <li><a href="#">Drop Down 3</a></li>
-                            <li><a href="#">Drop Down 4</a></li>
-                        </ul>
-                    </li> -->
-                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav><!-- .navbar -->
-
-        </div>
-    </header><!-- End Header -->
-
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex justify-cntent-center align-items-center">
-        <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
-
-            <!-- Slide 1 -->
-            <div class="row">
-                <div class="col-lg-6 active pt-0 pt-lg-3 justify-content-center d-grid">
-                    <h2 class="animate__animated animate__fadeInDown text-center text-lg-start">Welcome to
-                        <span>Gourbanbus</span>
-                    </h2>
-                    <p class="animate__animated animate__fadeInUp text-justify text-lg-start">Gourbanbus' GPS tracker simplifies 
-                        monitoring the bus's location in real-time, ensuring seamless transfers and enabling passengers and drivers 
-                        to observe each other's positions.
-                    </p>
-                    <div class="row">
-                        <div class="col-lg-12 d-flex justify-content-center justify-content-lg-start">
-                            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
-                                More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- <div class="carousel-item">
-                <div class="carousel-container">
-                    <h2 class="animate__animated animate__fadeInDown">Live Bus Tracking</h2>
-                    <p class="animate__animated animate__fadeInUp">Do you need to know where the bus is?
-                        We have your back.
-                        Using one simple interface, you may check expected delay periods and real bus locations on a
-                        map.
-                        To guarantee the most recent information, we use the most recent dynamic transit data directly
-                        from Gourbanbus system</p>
-                    <a href="#services" class="btn-get-started animate__animated animate__fadeInUp scrollto">More
-                        Service</a>
-                </div>
-            </div>
-
-          
-            <div class="carousel-item">
-                <div class="carousel-container">
-                    <h2 class="animate__animated animate__fadeInDown">Start
-                        your
-                        destination <br> with Gourbanbus</h2>
-                    <p class="animate__animated animate__fadeInUp">Get connected and learn the best way to commute with
-                        a bus for all urban residents.
-                        Gourbanbus goes above by providing you with a wide
-                        variety of features in a gorgeous, simple layout to help you go where you need to go.</p>
-                    <a href="#contact" class="btn-get-started animate__animated animate__fadeInUp scrollto">Contact
-                        Now</a>
-                </div>
-            </div>
-
-            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
-            </a>
-
-            <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
-            </a> -->
-
-        </div>
-    </section><!-- End Hero -->
-
-    <main id="main">
-
-        <!-- ======= Icon Boxes Section ======= -->
-        <section id="icon-boxes" class="icon-boxes">
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
-                        <div class="icon-box">
-                            <div class="row d-flex justify-content-center">
-                                <div class="icon"><i class="bx bx-station"></i></div>
-                                <h4 class="title text-center"><a>Live Passenger Data</a></h4>
-                                <p class="description text-justify">The Automated Passenger Counter uses advanced 
-                                    infrared technology to provide accurate boarding and departure data, 
-                                    helping you make informed decisions for your bus fleet.</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up"
-                        data-aos-delay="100">
-                        <div class="icon-box">
-                            <div class="row d-flex justify-content-center">
-                                <div class="icon"><i class="bx bxs-map-alt"></i></div>
-                                <h4 class="title text-center"><a>Driver Information</a></h4>
-                                <p class="description text-justify">Empower your drivers with a user-friendly interface for 
-                                    signing in, conducting inspections, accessing routes, and monitoring passenger 
-                                    information from various stations, creating 
-                                    a dynamic network of real-time fleet data.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up"
-                        data-aos-delay="200">
-                        <div class="icon-box">
-                            <div class="row d-flex justify-content-center">
-                                <div class="icon"><i class="bx bx-qr"></i></div>
-                                <h4 class="title text-center"><a href="">GPS Tracker using QR Code</a></h4>
-                                <p class="description text-justify">Improve your passengers' public transportation 
-                                    experience by offering a QR code scanner for viewing bus locations, ETAs, and 
-                                    routes, accessible from any internet-enabled device.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up"
-                        data-aos-delay="300">
-                        <div class="icon-box">
-                            <div class="row d-flex justify-content-center">
-                                <div class="icon"><i class="bx bx-sync"></i></div>
-                                <h4 class="title text-center"><a href="">Anti-Bunching</a></h4>
-                                <p class="description text-justify">Ensuring timely and synchronized bus schedules is crucial, 
-                                    and our anti-bunching algorithm considers various factors 
-                                    (time, distance, season, hour, traffic, etc.) 
-                                    to optimize the route progression timing for your fleet.
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section><!-- End Icon Boxes Section -->
-
-        <!-- ======= About Us Section ======= -->
-        <section id="about" class="about">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2>What is Gourbanbus</h2>
-                    <div class=" d-flex justify-content-center mt-2 mb-3 mb-lg-5">
-                        <div class="col-lg-12">
-                            <p class="text-justify">Gourbanbus' GPS tracker ensures you promptly know the bus location and arrival time, 
-                                enabling seamless transfers within the specified region.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row content">
-                    <div class="col-lg-6">
-                        <p>
-                            Modernizing Public Transportation<span>&#59;</span>
-                        </p>
-                        <ul>
-                            <li><i class="ri-check-double-line"></i>Real-Time GPS Tracking</li>
-                            <li><i class="ri-check-double-line"></i>Live Passenger Counter</li>
-                            <li><i class="ri-check-double-line"></i>Driver Access Benefits</li>
-                            <li><i class="ri-check-double-line"></i>Public Info Display</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6 pt-4 pt-lg-0">
-                        <p>
-                            Embedded GPS trackers enable passengers and bus drivers to observe each other's 
-                            real-time locations, saving time and effort as drivers can plan routes based on 
-                            passenger presence at bus stops.
-                        </p>
-                        <a href="#services" class="btn-learn-more">Learn More</a>
-                    </div>
-                </div>
-
-            </div>
-        </section><!-- End About Us Section -->
-
-        <!-- ======= Clients Section ======= -->
-        <!-- <section id="clients" class="clients">
-            <div class="container" data-aos="zoom-in">
-
-                <div class="clients-slider swiper">
-                    <div class="swiper-wrapper align-items-center">
-                        <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-
-            </div>
-        </section>End Clients Section -->
-
-        <!-- ======= Why Us Section ======= -->
-        <!-- End Why Us Section -->
-
-        <!-- ======= Services Section ======= -->
-        <section id="services" class="services pt-lg-3">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2>Solution Benefits </h2>
-                    <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
-                </div>
-
-                <div class="row">
-                    <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-                        <div class="icon-box">
-                            <i class="bi bi-card-checklist"></i>
-                            <h4><span class="color-primary">Public Info Display</span></h4>
-                            <p>Electronic displays with information about location, ETAs or advertisements can be placed
-                                at every stop.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
-                        data-aos-delay="200">
-                        <div class="icon-box">
-                            <i class="bi bi-qr-code"></i>
-                            <h4><span class="color-primary">Web Accessed QR Code</span></h4>
-                            <p>Easily access the Gourbanbus benefits by scanning the QR Code and the system will
-                                automatically register you through your pinned location.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
-                        data-aos-delay="300">
-                        <div class="icon-box">
-                            <i class="bi bi-stopwatch-fill"></i>
-                            <h4><span class="color-primary">Passenger Counters</span></h4>
-                            <p>Automated Passenger Counters (APCs) help monitor and analyze passengers usage of public
-                                vehicles.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
-                        data-aos-delay="400">
-                        <div class="icon-box">
-                            <i class="bx bxs-navigation"></i>
-                            <h4><span class="color-primary">Real-time GPS Tracking</span></h4>
-                            <p>Monitor and track vehicles in real-time while providing location and routes information
-                                to passengers.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
-                        data-aos-delay="500">
-                        <div class="icon-box">
-                            <i class="bx bxs-map-pin"></i>
-                            <h4><span class="color-primary">Public Bus Tracker</span></h4>
-                            <p>Passengers can view real-time locations of public transportation vehicles as well as
-                                access route information.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
-                        data-aos-delay="600">
-                        <div class="icon-box">
-                            <i class="bx bx-broadcast"></i>
-                            <h4><span class="color-primary">Arrival Forecast</span></h4>
-                            <p>Passengers can view an Estimated Time of Arrival (ETA) to every stop in the vehicle’s
-                                route.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section><!-- End Services Section -->
-
-        <!-- ======= Cta Section ======= -->
-        <section id="cta" class="cta">
-            <div class="container">
-
-                <div class="row" data-aos="zoom-in">
-                    <div class="col-lg-9 text-center text-lg-start">
-                        <h3 class="text-uppercase">Discover urban cities via <strong>bus</strong></h3>
-                        <p> We partner with transit agencies and shared mobility providers to get cities moving.</p>
-                    </div>
-                    <div class="col-lg-3 cta-btn-container text-center">
-                        <a class="cta-btn align-middle" href="#contact">Let's Work Together</a>
-                    </div>
-                </div>
-
-            </div>
-        </section><!-- End Cta Section -->
-
-        <!-- ======= Portfoio Section ======= -->
-        <!-- <section id="portfolio" class="portfoio">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2>Portfoio</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-12 d-flex justify-content-center">
-                        <ul id="portfolio-flters">
-                            <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".filter-app">App</li>
-                            <li data-filter=".filter-card">Card</li>
-                            <li data-filter=".filter-web">Web</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="row portfolio-container">
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App 1</h4>
-                            <p>App</p>
-                            <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
-                                class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                    class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Web 3</h4>
-                            <p>Web</p>
-                            <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
-                                class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                    class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App 2</h4>
-                            <p>App</p>
-                            <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
-                                class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                    class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Card 2</h4>
-                            <p>Card</p>
-                            <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
-                                class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                    class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Web 2</h4>
-                            <p>Web</p>
-                            <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"
-                                class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                    class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App 3</h4>
-                            <p>App</p>
-                            <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
-                                class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                    class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Card 1</h4>
-                            <p>Card</p>
-                            <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
-                                class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                    class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Card 3</h4>
-                            <p>Card</p>
-                            <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
-                                class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                    class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Web 3</h4>
-                            <p>Web</p>
-                            <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
-                                class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                    class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>End Portfoio Section -->
-
-        <!-- ======= Team Section ======= -->
-        <!-- <section id="team" class="team section-bg">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2>Team</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                </div>
-
-                <div class="row">
-
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4>Walter White</h4>
-                                <span>Chief Executive Officer</span>
-                                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-                                <div class="social">
-                                    <a href=""><i class="ri-twitter-fill"></i></a>
-                                    <a href=""><i class="ri-facebook-fill"></i></a>
-                                    <a href=""><i class="ri-instagram-fill"></i></a>
-                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-                        <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4>Sarah Jhonson</h4>
-                                <span>Product Manager</span>
-                                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-                                <div class="social">
-                                    <a href=""><i class="ri-twitter-fill"></i></a>
-                                    <a href=""><i class="ri-facebook-fill"></i></a>
-                                    <a href=""><i class="ri-instagram-fill"></i></a>
-                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 mt-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4>William Anderson</h4>
-                                <span>CTO</span>
-                                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-                                <div class="social">
-                                    <a href=""><i class="ri-twitter-fill"></i></a>
-                                    <a href=""><i class="ri-facebook-fill"></i></a>
-                                    <a href=""><i class="ri-instagram-fill"></i></a>
-                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 mt-4" data-aos="fade-up" data-aos-delay="400">
-                        <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-                            <div class="member-info">
-                                <h4>Amanda Jepson</h4>
-                                <span>Accountant</span>
-                                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
-                                <div class="social">
-                                    <a href=""><i class="ri-twitter-fill"></i></a>
-                                    <a href=""><i class="ri-facebook-fill"></i></a>
-                                    <a href=""><i class="ri-instagram-fill"></i></a>
-                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>End Team Section -->
-
-        <!-- ======= Pricing Section ======= -->
-        <!-- <section id="pricing" class="pricing">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2>Pricing</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                </div>
-
-                <div class="row">
-
-                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="box">
-                            <h3>Free</h3>
-                            <h4><sup>$</sup>0<span> / month</span></h4>
-                            <ul>
-                                <li>Aida dere</li>
-                                <li>Nec feugiat nisl</li>
-                                <li>Nulla at volutpat dola</li>
-                                <li class="na">Pharetra massa</li>
-                                <li class="na">Massa ultricies mi</li>
-                            </ul>
-                            <div class="btn-wrap">
-                                <a href="#" class="btn-buy">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
-                        <div class="box featured">
-                            <h3>Business</h3>
-                            <h4><sup>$</sup>19<span> / month</span></h4>
-                            <ul>
-                                <li>Aida dere</li>
-                                <li>Nec feugiat nisl</li>
-                                <li>Nulla at volutpat dola</li>
-                                <li>Pharetra massa</li>
-                                <li class="na">Massa ultricies mi</li>
-                            </ul>
-                            <div class="btn-wrap">
-                                <a href="#" class="btn-buy">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-                        <div class="box">
-                            <h3>Developer</h3>
-                            <h4><sup>$</sup>29<span> / month</span></h4>
-                            <ul>
-                                <li>Aida dere</li>
-                                <li>Nec feugiat nisl</li>
-                                <li>Nulla at volutpat dola</li>
-                                <li>Pharetra massa</li>
-                                <li>Massa ultricies mi</li>
-                            </ul>
-                            <div class="btn-wrap">
-                                <a href="#" class="btn-buy">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
-                        <div class="box">
-                            <span class="advanced">Advanced</span>
-                            <h3>Ultimate</h3>
-                            <h4><sup>$</sup>49<span> / month</span></h4>
-                            <ul>
-                                <li>Aida dere</li>
-                                <li>Nec feugiat nisl</li>
-                                <li>Nulla at volutpat dola</li>
-                                <li>Pharetra massa</li>
-                                <li>Massa ultricies mi</li>
-                            </ul>
-                            <div class="btn-wrap">
-                                <a href="#" class="btn-buy">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>End Pricing Section -->
-
-        <!-- ======= Frequently Asked Questions Section ======= -->
-        <!-- <section id="faq" class="faq section-bg">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2>Frequently Asked Questions</h2>
-                </div>
-
-                <div class="faq-list">
-                    <ul>
-                        <li data-aos="fade-up" data-aos="fade-up" data-aos-delay="100">
-                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
-                                data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i
-                                    class="bx bx-chevron-down icon-show"></i><i
-                                    class="bx bx-chevron-up icon-close"></i></a>
-                            <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
-                                <p>
-                                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet
-                                    non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor
-                                    purus non.
-                                </p>
-                            </div>
-                        </li>
-
-                        <li data-aos="fade-up" data-aos-delay="200">
-                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim
-                                nunc? <i class="bx bx-chevron-down icon-show"></i><i
-                                    class="bx bx-chevron-up icon-close"></i></a>
-                            <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-                                <p>
-                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum
-                                    velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend
-                                    donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in
-                                    cursus turpis massa tincidunt dui.
-                                </p>
-                            </div>
-                        </li>
-
-                        <li data-aos="fade-up" data-aos-delay="300">
-                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing
-                                elit? <i class="bx bx-chevron-down icon-show"></i><i
-                                    class="bx bx-chevron-up icon-close"></i></a>
-                            <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                                <p>
-                                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus
-                                    pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit.
-                                    Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis
-                                    tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                                </p>
-                            </div>
-                        </li>
-
-                        <li data-aos="fade-up" data-aos-delay="400">
-                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam
-                                sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i
-                                    class="bx bx-chevron-up icon-close"></i></a>
-                            <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
-                                <p>
-                                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in
-                                    est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl
-                                    suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
-                                </p>
-                            </div>
-                        </li>
-
-                        <li data-aos="fade-up" data-aos-delay="500">
-                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare.
-                                Varius vel pharetra vel turpis nunc eget lorem dolor? <i
-                                    class="bx bx-chevron-down icon-show"></i><i
-                                    class="bx bx-chevron-up icon-close"></i></a>
-                            <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
-                                <p>
-                                    Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo
-                                    integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc
-                                    eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
-                                </p>
-                            </div>
-                        </li>
-
-                    </ul>
-                </div>
-
-            </div>
-        </section>End Frequently Asked Questions Section -->
-
-        <section id="why-us" class="why-us">
-            <div class="container-fluid">
-
-                <div class="row">
-
-                    <div class="col-lg-5 align-items-stretch position-relative video-box"
-                        style='background-image: url("assets/img/bus.jpg");' data-aos="fade-right">
-                        <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn mb-4"></a> -->
-                    </div>
-
-                    <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch"
-                        data-aos="fade-left">
-
-                        <div class="content section-title mb-4">
-                            <h2 class="mb-2 mb-lg-2 text-lg-start">Benefits of using Gourbanbus
-                            </h2>
-                            <p class="text-lg-start">
-                                We become useful tools for planning your next step.
-                            </p>
-                        </div>
-
-                        <div class="accordion-list">
-                            <ul>
-                                <li data-aos="fade-up" data-aos-delay="100">
-                                    <a data-bs-toggle="collapse" class="collapse"
-                                        data-bs-target="#accordion-list-1"><span>01</span>Boost Productivity<i
-                                            class="bx bx-chevron-down icon-show"></i><i
-                                            class="bx bx-chevron-up icon-close"></i></a>
-                                    <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
-                                        <p>
-                                            Simplify the tasks you do every day with an end-to-end public transportation
-                                            management solution that improves productivity and increases ridership.
-                                        </p>
-                                    </div>
-                                </li>
-
-                                <li data-aos="fade-up" data-aos-delay="200">
-                                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2"
-                                        class="collapsed"><span>02</span>Empowering Passengers<i
-                                            class="bx bx-chevron-down icon-show"></i><i
-                                            class="bx bx-chevron-up icon-close"></i></a>
-                                    <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
-                                        <p>
-                                            Having the right tools for your passengers can not only help them plan their
-                                            journey but can also increase the frequency of usage and overall ridership.
-                                        </p>
-                                    </div>
-                                </li>
-
-                                <li data-aos="fade-up" data-aos-delay="300">
-                                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3"
-                                        class="collapsed"><span>03</span>Improve System<i
-                                            class="bx bx-chevron-down icon-show"></i><i
-                                            class="bx bx-chevron-up icon-close"></i></a>
-                                    <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
-                                        <p>
-                                            With an easily integrated solution from Gourbanus, your organization can
-                                            track and cut costs on operations, employees, drivers, maintenance, fuel
-                                            consumption and more.
-                                        </p>
-                                    </div>
-                                </li>
-
-                            </ul>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-        <!-- ======= Contact Section ======= -->
-        <section id="contact" class="contact">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2>Contact Us</h2>
-                </div>
-
-                <div class="row mt-1 d-flex justify-content-end" data-aos="fade-right" data-aos-delay="100">
-
-                    <div class="col-lg-5">
-                        <div class="info">
-                            <div class="address">
-                                <i class="bi bi-geo-alt"></i>
-                                <h4>Location:</h4>
-                                <p>H-8-10, Aeropod Commercial Square, <br> Jalan Aeropod Off Jalan Kepayan, <br> 88200
-                                    Kota
-                                    Kinabalu, Sabah, MY</p>
-                            </div>
-
-                            <div class="email">
-                                <i class="bi bi-envelope"></i>
-                                <h4>Email:</h4>
-                                <p>info@gourbanbus.com</p>
-                            </div>
-
-                            <div class="phone">
-                                <i class="bi bi-phone"></i>
-                                <h4>Call:</h4>
-                                <p>+60 12 873 1819</p>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
-
-                        <form action="mailto:info@phisoft.my" method="post" class="php-email-form">
-                            <div class="form-group mt-3">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                                    required>
-                            </div>
-                            <div class="form-group mt-3">
-                                <input type="email" class="form-control" name="email" id="email"
-                                    placeholder="Your Email" required>
-                            </div>
-                            <div class="form-group mt-3">
-                                <input type="tel" class="form-control" name="phonenumber" id="phone"
-                                    placeholder="Phone Number" required>
-                            </div>
-                            <div class="form-group mt-3">
-                                <input type="text" class="form-control" name="subject" id="subject"
-                                    placeholder="Subject" required>
-                            </div>
-                            <div class="form-group mt-3">
-                                <textarea class="form-control" name="message" rows="5" placeholder="Message"
-                                    required></textarea>
-                            </div>
-                            <div class="my-3">
-                                <div class="loading">Loading</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
-                            </div>
-                            <div class="text-center"><button type="submit">Send Message</button></div>
-                        </form>
-
-                    </div>
-
-                </div>
-
-            </div>
-        </section><!-- End Contact Section -->
-
-    </main><!-- End #main -->
-
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-
-        <!-- <div class="footer-newsletter">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+  </div>
+
+  <!-- Header -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo" aria-label="Gourbanbus Home">
+        <img src="assets/img/logo-large.png" alt="Gourbanbus logo" class="img-fluid">
+      </a>
+
+      <nav id="navbar" class="navbar" aria-label="Primary navigation">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Solutions</a></li>
+          <li><a class="nav-link scrollto" href="#why-us">Benefits</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle" aria-label="Open navigation menu"></i>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="d-flex align-items-center hero-modern">
+    <div class="container position-relative">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6">
+          <p class="hero-kicker animate__animated animate__fadeInDown">Smart Mobility Platform</p>
+          <h1 class="animate__animated animate__fadeInDown">Move cities forward with reliable, data-driven bus operations</h1>
+          <p class="animate__animated animate__fadeInUp hero-subtext">
+            Gourbanbus helps operators and passengers with real-time GPS tracking, arrival forecasts, passenger data,
+            and route visibility in one connected system.
+          </p>
+          <div class="hero-actions animate__animated animate__fadeInUp">
+            <a href="#services" class="btn-get-started scrollto">Explore Solutions</a>
+            <a href="#contact" class="btn-ghost scrollto">Talk to Us</a>
           </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="hero-card hero-intelligence-card" data-aos="fade-left">
+            <div class="hero-card-media">
+              <img src="assets/img/bus.jpg" class="img-fluid" alt="Urban bus at station with live tracking concept">
+              <span class="hero-card-badge"><i class="bi bi-broadcast-pin"></i> Live Operations</span>
+            </div>
+            <div class="hero-card-content">
+              <h2>Real-time transit intelligence</h2>
+              <p>Track vehicles, support drivers, and inform passengers with actionable live insights.</p>
+              <ul class="hero-card-points">
+                <li><i class="bi bi-check2-circle"></i> Instant vehicle visibility</li>
+                <li><i class="bi bi-check2-circle"></i> ETA and route confidence</li>
+                <li><i class="bi bi-check2-circle"></i> Faster operational response</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <!-- Feature Highlights -->
+    <section id="icon-boxes" class="icon-boxes">
+      <div class="container">
+        <div class="section-title">
+          <h2>Platform Highlights</h2>
+          <p>Built for modern transit teams and daily commuters.</p>
+        </div>
+
+        <div class="row gy-4">
+          <article class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="icon-box">
+              <div class="row d-flex justify-content-center">
+                <div class="icon"><i class="bx bx-station"></i></div>
+                <h3 class="title text-center">Live Passenger Data</h3>
+                <p class="description text-justify">Advanced passenger counting helps operators make better decisions on fleet planning and service quality.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="row d-flex justify-content-center">
+                <div class="icon"><i class="bx bxs-id-card"></i></div>
+                <h3 class="title text-center">Driver Workspace</h3>
+                <p class="description text-justify">Drivers can access route instructions, check-in flows, and key operational information in one interface.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="row d-flex justify-content-center">
+                <div class="icon"><i class="bx bx-qr"></i></div>
+                <h3 class="title text-center">QR-Based Access</h3>
+                <p class="description text-justify">Passengers can scan and instantly check live location, route details, and estimated arrival times.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="row d-flex justify-content-center">
+                <div class="icon"><i class="bx bx-sync"></i></div>
+                <h3 class="title text-center">Anti-Bunching Control</h3>
+                <p class="description text-justify">Adaptive scheduling improves consistency by reducing bunching and balancing traffic-time conditions.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>What is Gourbanbus</h2>
+          <p class="text-justify">A connected transit platform for improving punctuality, visibility, and passenger confidence in urban public transport.</p>
+        </div>
+
+        <div class="row content g-4">
           <div class="col-lg-6">
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+            <h3 class="about-heading">Modernizing public transportation</h3>
+            <ul>
+              <li><i class="ri-check-double-line"></i>Real-time GPS vehicle tracking</li>
+              <li><i class="ri-check-double-line"></i>Live passenger counter analytics</li>
+              <li><i class="ri-check-double-line"></i>Driver-focused operation tools</li>
+              <li><i class="ri-check-double-line"></i>Passenger information channels</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-2 pt-lg-0">
+            <p>
+              Gourbanbus enables operators to optimize decisions using real-world movement and demand data.
+              Passengers benefit from clearer ETAs and less uncertainty at bus stops.
+            </p>
+            <a href="#services" class="btn-learn-more scrollto">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services pt-lg-3">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Solution Benefits</h2>
+          <p>A complete set of features for daily operations and rider experience.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <article class="icon-box">
+              <i class="bi bi-card-checklist"></i>
+              <h3><span class="color-primary">Public Info Display</span></h3>
+              <p>Deliver stop-level updates such as ETAs, route updates, and announcements.</p>
+            </article>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+            <article class="icon-box">
+              <i class="bi bi-qr-code"></i>
+              <h3><span class="color-primary">Web Accessed QR Code</span></h3>
+              <p>Fast access to route and location info from any mobile browser using a simple scan.</p>
+            </article>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="300">
+            <article class="icon-box">
+              <i class="bi bi-stopwatch-fill"></i>
+              <h3><span class="color-primary">Passenger Counters</span></h3>
+              <p>Measure occupancy trends and improve allocation with accurate usage statistics.</p>
+            </article>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="400">
+            <article class="icon-box">
+              <i class="bx bxs-navigation"></i>
+              <h3><span class="color-primary">Real-time GPS Tracking</span></h3>
+              <p>Monitor fleet movement in real time and provide passengers with live visibility.</p>
+            </article>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="500">
+            <article class="icon-box">
+              <i class="bx bxs-map-pin"></i>
+              <h3><span class="color-primary">Public Bus Tracker</span></h3>
+              <p>Help riders locate buses quickly and reduce waiting uncertainty.</p>
+            </article>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="600">
+            <article class="icon-box">
+              <i class="bx bx-broadcast"></i>
+              <h3><span class="color-primary">Arrival Forecast</span></h3>
+              <p>Provide estimated arrival windows for each stop along active routes.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us -->
+    <section id="why-us" class="why-us">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-5 align-items-stretch position-relative video-box"
+            style='background-image: url("assets/img/bus.jpg");' data-aos="fade-right">
+          </div>
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch" data-aos="fade-left">
+            <div class="content section-title mb-4">
+              <h2 class="mb-2 mb-lg-2 text-lg-start">Why transit teams choose Gourbanbus</h2>
+              <p class="text-lg-start">Improve service quality with stronger operational control and rider communication.</p>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1">
+                    <span>01</span> Boost Productivity <i class="bx bx-chevron-down icon-show"></i><i
+                      class="bx bx-chevron-up icon-close"></i>
+                  </a>
+                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                    <p>Centralized tools streamline operations and support better decisions across routes and schedules.</p>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" data-aos-delay="200">
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed">
+                    <span>02</span> Empower Passengers <i class="bx bx-chevron-down icon-show"></i><i
+                      class="bx bx-chevron-up icon-close"></i>
+                  </a>
+                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                    <p>Real-time visibility improves rider confidence and supports more frequent transit usage.</p>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed">
+                    <span>03</span> Improve System Performance <i class="bx bx-chevron-down icon-show"></i><i
+                      class="bx bx-chevron-up icon-close"></i>
+                  </a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>Track operational metrics and uncover opportunities to reduce inefficiencies across the network.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta" class="cta">
+      <div class="container">
+        <div class="row" data-aos="zoom-in">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h2 class="text-uppercase">Build smarter urban mobility with Gourbanbus</h2>
+            <p>Partner with us to improve passenger experience and modernize transit operations.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle scrollto" href="#contact">Let's Work Together</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Contact Us</h2>
+          <p>Discuss how Gourbanbus can support your city or transport organization.</p>
+        </div>
+
+        <div class="row mt-1 d-flex justify-content-end g-4">
+          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="100">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-chat-dots" aria-hidden="true"></i>
+                <h3>Let’s connect</h3>
+                <p>Send us your inquiry and our team will get back to you shortly.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
+            <form action="forms/contact.php" method="post" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="tel" class="form-control" name="phonenumber" id="phone" placeholder="Phone Number" required>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you.</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div>
         </div>
       </div>
-    </div> -->
+    </section>
+  </main>
 
-        <div class="footer-top">
-            <div class="container">
-                <div class="row d-flex">
-                    <!-- <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Useful Links</h4>
-                        <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-                    </ul>
-                </div> -->
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row d-flex">
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3 class="text-uppercase">About Gourbanbus</h3>
+            <p class="text-justify">Gourbanbus is designed to improve public transportation reliability with live fleet tracking,
+              operational analytics, and better passenger communication.</p>
+          </div>
 
-                    <div class="col-lg-3 col-md-6 footer-info">
-                        <h3 class="text-uppercase">About Gourbanbus</h3>
-                        <p class="text-justify">Gourbanbus was developed as a modern solution for the local communities
-                            to experience a
-                            seamless travelling experience with the embedded GPS tracker that can be easily access
-                            through QR code scanning without requiring any additional installation.</p>
-                    </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Core Solutions</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Real-time GPS Tracking</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Passenger Counter Insights</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">QR-Based Rider Access</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Arrival Forecasting</a></li>
+            </ul>
+          </div>
 
-                    <div class="col-lg-3 col-md-6 footer-links">
-                        <h4 class="text-lg-center">Our Services</h4>
-                        <div class="d-flex justify-content-lg-center">
-                            <ul>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#services">Public Info Display</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#services">Web Accessed QR Code</a>
-                                </li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#services">Passenger Counters</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#services">Real-time GPS Tracking</a>
-                                </li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#services">Public Bus Tracker</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#services">Arrival Forecast</a></li>
-                            </ul>
-                        </div>
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Details</h4>
+            <p>
+              H-08-10, Aeropod Commercial Square,<br>
+              Jalan Aeropod Off Jalan Kepayan,<br>
+              88200 Kota Kinabalu, Sabah, Malaysia<br><br>
+              Email: info@gourbanbus.com<br>
+              Call: +60 12 873 1819
+            </p>
+          </div>
 
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 footer-contact">
-                        <h4>Contact Us</h4>
-                        <p>
-                            H-8-10, Aeropod Commercial Square, <br> Jalan Aeropod Off Jalan Kepayan, <br> 88200
-                            Kota
-                            Kinabalu, Sabah, MY<br><br>
-                            Phone: +60 12 866 9695<br>
-                            Email: info@phisoft.my<br>
-                        </p>
-
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Social Media</h4>
-                        <div class=" mt-3">
-                            <ul>
-                                <li>
-                                    <div class="d-flex align-items-center">
-                                        <div class=" social-links d-flex">
-                                            <a href="https://www.phisoft.my" class="website"><i
-                                                    class="bx bx-globe text-white px-0"></i></a>
-                                        </div>
-                                        <div>
-                                            <a href="https://www.phisoft.my">
-                                                <p class="ps-1 mb-0">Phi Software</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="d-flex align-items-center">
-                                        <div class=" social-links d-flex">
-                                            <a href="https://www.facebook.com/phisoft.my/" class="facebook"><i
-                                                    class="bx bxl-facebook text-white px-0"></i></a>
-                                        </div>
-                                        <div>
-                                            <a href="https://www.facebook.com/phisoft.my/">
-                                                <p class="ps-1 mb-0">Facebook</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="d-flex align-items-center">
-                                        <div class=" social-links d-flex">
-                                            <a href="https://www.instagram.com/phisoft.my/" class="instagram"><i
-                                                    class="bx bxl-instagram text-white px-0"></i></a>
-                                        </div>
-                                        <div>
-                                            <a href="https://www.instagram.com/phisoft.my/">
-                                                <p class="ps-1 mb-0">Instagram</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="d-flex align-items-center">
-                                        <div class=" social-links d-flex">
-                                            <a href="https://www.linkedin.com/company/phisoft-my/" class="linkedin"><i
-                                                    class="bx bxl-linkedin text-white px-0"></i></a>
-                                        </div>
-                                        <div>
-                                            <a href="https://www.linkedin.com/company/phisoft-my/">
-                                                <p class="ps-1 mb-0">LinkedIn</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Social Media</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.facebook.com/phisoft.my/">Facebook</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.instagram.com/phisoft.my/">Instagram</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.linkedin.com/company/phisoft-my/">LinkedIn</a></li>
+            </ul>
+          </div>
         </div>
-        </div>
+      </div>
+    </div>
 
-        <div class="container">
-            <div class="copyright">
-                &copy; Copyright <span>Gourbanbus</span>. All Rights Reserved
-            </div>
-            <!-- <div class="credits">
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div> -->
-        </div>
-    </footer><!-- End Footer -->
+    <div class="container">
+      <div class="copyright">
+        &copy; 2026. Gourbanbus. All Rights Reserved
+      </div>
+    </div>
+  </footer>
 
-    <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="color-primary bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+  <a href="https://wa.me/60128731819?text=Hi%20Gourbanbus%2C%20I%20want%20to%20know%20more%20about%20your%20solution."
+    class="whatsapp-float d-flex align-items-center justify-content-center" target="_blank" rel="noopener noreferrer"
+    aria-label="Contact us on WhatsApp">
+    <span class="whatsapp-label">Contact Us</span>
+    <i class="bi bi-whatsapp" aria-hidden="true"></i>
+  </a>
 
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center" aria-label="Back to top">
+    <i class="color-primary bi bi-arrow-up-short"></i>
+  </a>
 
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
